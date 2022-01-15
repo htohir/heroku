@@ -13,7 +13,7 @@ def home():
 def predict():
     int_feature = [int(x) in request.form.values()]
     
-    final_feature = [np.array(int_feature]
+    final_feature = [np.array(int_feature)]
     prediction = model.predict(final_feature)
     output = round(prediction[0],2)
     return render_template('index.html',prediction_text='time={}.format(output))
