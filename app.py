@@ -1,5 +1,5 @@
 import numpy as np
-from flask import flask, jsonfly, request, render_template
+from flask import Flask, jsonfly, request, render_template
 import pickle
 
 app = flask(__name__)
